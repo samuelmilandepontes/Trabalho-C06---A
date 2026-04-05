@@ -65,6 +65,16 @@ Foi corrigido o uso do acumulador, indicando que a variável deveria ser inicial
 
 Essa correção foi aplicada no método de cálculo do total da compra.
 
+public float calculaTotalCompra() {
+    float soma = 0;
+
+    for (int i = 0; i < contador; i++) {
+        soma += computadores[i].getPreco();
+    }
+
+    return soma;
+}
+
 ---
 
 Avaliação do uso da IA
